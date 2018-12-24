@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>colibritech</title>
+	<link rel="stylesheet" type="text/css" href="myStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500,600" rel="stylesheet">
+</head>
+<body id="contact-page-body">
+	<div id="menu-btn" onclick="toggleMenu()">
+	  <div class="bar1"></div>
+	  <div class="bar2"></div>
+	  <div class="bar3"></div>
+	</div>
+	<div id="mobile-menu">
+		<ul id="list">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><button onclick="toggle()">+</button><a href="#">Services</a></li>
+			<li class="sub-links"><a href="network-support.html">Network Support</a></li>
+			<li class="sub-links"><a href="computer-repair.html">Computer Repair</a></li>
+			<li class="sub-links"><a href="web-design.html">Web Design</a></li>
+			<li class="sub-links"><a href="voice-and-data.html">Voice and Data</a></li>
+			<li class="current"><a href="contact-us.html">Let's Talk !</a></li>
+		</ul>
+	</div>
+	<div id="navbar" class="contact-us">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li class="dropdown"><a href="#">Services</a>
+				<div class="dropdown-content">
+					<ul>
+						<li><a href="network-support.html">Network Support</a></li>
+						<li><a href="computer-repair.html">Computer Repair</a></li>
+						<li><a href="web-design.html">Web Design</a></li>
+						<li><a href="voice-and-data.html">Voice and Data</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="contact-us.html">Let's Talk !</a></li>
+		</ul>
+	</div>
+<div class="contact-content-container">
+	<section id="contact" class="headline-container">
+		<content class="">
+			<h1 class="">Get in touch</h1>
+			<ul class="">
+				<li id="phone-number">908 - 890 - 0866</li>
+				<li id="hours">Mon - Fri 9AM - 7PM EST<br>Sat 9AM - 1PM</li>
+			</ul>
+			<a href="tel:9088900866"><img src="assets/call-us-icon.svg">Call Us</a>
+			<ul>
+				<li><p>Mon - Fri 9AM - 7PM EST<br>Sat 9AM - 1PM</p></li>
+				<li><p>(908) - 890 - 0866</p></li>
+				<li><p>75 Redwood Rd <br> Springfield, NJ 07081</p></li>
+			</ul>
+		</content>
+	</section>
+	<section id="contact-info" class="padding">
+
+		<div class="animate">
+			<a href="https://maps.google.com/?q=75 Redwood Rd Springfield, New Jersey, 07307"><img src="assets/location.svg"></a>
+			<p>75 Redwood Rd<br>Springfield, NJ 07081</p>
+		</div>
+
+		<div class="animate">
+			<a href="tel:9088900866"><img src="assets/phone-number-icon.svg"></a>
+			<p>(908) - 890 - 0866</p>
+		</div>
+
+		<div class="animate">
+			<img src="assets/clock.svg">
+			<p>Mon - Fri 9AM - 7PM EST<br>Sat 9AM - 1PM</p>
+		</div>
+	</section>
+	<section id="form" class="padding">
+		<h3>Or fill out this form,<br> and we'll get back to you.</h3>
+		<img src="assets/gradient-line.svg" id="line">
+		<form action="#">
+			<div class="row">
+				<div class="col-xs-12 col-lg-6">
+					<p>First Name</p><br>
+					<input type="text" name="firstname" placeholder="First Name" required>
+				</div>
+				<div class="col-xs-12 col-lg-6">
+					<p>Last Name</p><br>
+					<input type="text" name="lastname" placeholder="Last Name" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-lg-6">
+					<p>Email</p><br>
+					<input type="email" name="email" placeholder="Email" required>
+				</div>
+				<div class="col-xs-12 col-lg-6">
+					<p>Phone Number</p><br>
+					<input type="tel" name="phonenumber" placeholder="Phone Number">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="select-input">What can we help you with?</p><br>
+					<select name="servicelist" class="select-input">
+						<option value="networkSupport">Network Support</option>
+						<option value="webDesign">Web Design</option>
+						<option value="computerRepair">Computer Repair</option>
+						<option value="voiceAndData">Voice &amp; Data</option>
+					</select>
+					<p>Message</p><br>
+					<textarea  name="message" placeholder="Type your message..."></textarea>
+
+					<input type="submit">
+				</div>
+			</div>
+		</form>
+	</section>
+</div>
+	<footer>
+		<a href="index.html" class="bold">Home</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="contact-us.html">Contact Us</a>
+		<img src="assets/facebook-white.svg">
+		<img src="assets/twitter-white.svg">
+		<img src="assets/linkedIn-white.svg">
+		<img src="assets/colibritech.svg" id="logo-name">
+		<p>&copy;2018.All rights reserved.</p>
+	</footer>
+	<script type="text/javascript" src="bundle.js"></script>
+</body>
+</html>

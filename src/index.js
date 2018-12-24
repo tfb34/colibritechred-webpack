@@ -65,7 +65,7 @@ function intersectionCallback(entries){
 			}else{
 				el.classList.add('doSomething');
 			}
-			observer.unobserve(el);
+			/*observer.unobserve(el);*/
 		}
 	})
 }

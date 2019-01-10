@@ -1483,10 +1483,10 @@ input[type="submit"]{
   }
 }
 @media only screen and (min-width: 1200px){
-  /*.service-intro h1 > img{
-      transform: scale(4.5);
-      right: 25vw;
-  }*/
+
+    .headline-container#contact{
+      min-height:700px;
+    }
     #strategy-product-info-box{
       transform: translateY(-50px);
     }
@@ -1518,7 +1518,15 @@ input[type="submit"]{
       right:0;
       bottom:0;
       margin: auto;
-      height:500px;
+      height:550px;
+      box-sizing: border-box;
+    }
+    #form form{
+      width:100%;
+    }
+    #form.padding{
+      padding-left: 3em;
+      padding-right: 3em;
     }
     .contact-content-container{
       position: relative;

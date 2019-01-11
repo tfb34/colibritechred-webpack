@@ -45,11 +45,23 @@
 	</div>
 	<section id="welcome">
 		<h1>Web and Technology Solutions</h1>
-		<img src="assets/service-options-svg.svg" id="service-options-svg" class="animate">
+		<!-- <img src="assets/service-options-svg.svg" id="service-options-svg" class="animate"> -->
+
+		<ul id="service-options-svg" class="animate">
+			<li><p>Web Design</p></li>
+			<li><div class="text-line-divider"></div></li>
+			<li><p>Network Support</p></li>
+			<li><div class="text-line-divider"></div></li>
+			<li><p>Computer Repair</p></li>
+			<li><div class="text-line-divider"></div></li>
+			<li><p>Voice &amp; Data</p></li>
+		</ul>
 		<a href="contact-us.html">Get Started</a>
-		<div id="img-wrapper">
+		<!-- <div id="img-wrapper">
 			<img src="assets/wavy-pic.svg">
-		</div>
+		</div> -->
+		<img src="assets/diamonds.svg" style="position: absolute;bottom:0;right:0;height:100%">
+		<img src="assets/diamonds.svg">
 	</section>
 	<section id="skills" class="padding">
 		<div class="center-container">
@@ -60,28 +72,28 @@
 				<a href="contact-us.html" class="button">Get Started</a>
 			</div>
 			<div id="wrapper" class="clear">
-				<div class="service-box animate">
-					<img src="assets/database.svg">
+				<div class="service-box animate" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<img src="assets/database2.svg">
 					<h3>Network Support</h3>
-					<p>Remote Troubleshooting, Backup Recovery, Software Installation and more.</p>
+					<p class="animate">Remote Troubleshooting, Backup Recovery, Software Installation and more.</p>
 				</div>
 				
-				<div class="service-box animate">
-					<img src="assets/web-design.svg">
+				<div class="service-box animate" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<img src="assets/web-design2.svg">
 					<h3>Web Design</h3>
-					<p>Custom made website and advertising for your business</p>
+					<p class="animate">Custom made website and advertising for your business</p>
 				</div>
 				
-				<div class="service-box animate">
-					<img src="assets/computer-repair.svg">
+				<div class="service-box animate" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<img src="assets/computer-repair2.svg">
 					<h3>Computer Repair</h3>
-					<p>Need help solving hardware or software issues?</p>
+					<p class="animate">Need help solving hardware or software issues?</p>
 				</div>
 				
-				<div class="service-box animate">
-					<img src="assets/voicemail.svg">
+				<div class="service-box animate" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+					<img src="assets/voicemail2.svg">
 					<h3>Voice &amp; Data</h3>
-					<p>Redirect calls to different representatives so you never miss a customer's call.</p>
+					<p class="animate">Redirect calls to different representatives so you never miss a customer's call.</p>
 				</div>
 			</div>
 		</div>
@@ -115,7 +127,7 @@
 			</div>
 		</div>
 	</section>
-	<footer>
+	<footer style="background-image: var(--main-gradient);">
 		<a href="index.html" class="bold">Home</a>
 		<a href="#">About</a>
 		<a href="#">Services</a>

@@ -36,7 +36,13 @@ function fadeUp(){
 	}
 }
 
+function mouseOver(x){
+	x.getElementsByTagName('p')[0].style.color="white";
+}
 
+function mouseOut(x){
+	x.getElementsByTagName('p')[0].style.color="rgba(1,1,1,0.5)";
+}
 
 let a = Array.from(document.getElementsByClassName('animate'));
 // Create an intersection observer for each element with the class name animate
@@ -100,10 +106,12 @@ function isVisible(el){
 		return false;
 	}
 }
-window.isVisible = isVisible;
 
+window.isVisible = isVisible;
 }
 
 window.toggleMenu = toggleMenu;
 window.toggle = toggle;
 window.fadeUp = fadeUp;
+window.mouseOver = mouseOver;
+window.mouseOut = mouseOut;
